@@ -11,18 +11,16 @@
 </head>
 
 <body>
-  <header>
-    <form id="search-form">
-      <input type="text" name="searchQuery" placeholder="Search images..." required>
+  <header class="header">
+    <form id="search-form" class="search-form">
+      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
       <button type="submit">Search</button>
     </form>
   </header>
-
   <main>
+    <div id="loader" class="loader"></div>
     <div class="gallery"></div>
-    <button id="load-more" hidden>Load More</button>
   </main>
-
   <script type="module" src="./main.js"></script>
 </body>
 
